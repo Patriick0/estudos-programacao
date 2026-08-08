@@ -1,0 +1,26 @@
+<h3>Álcool ou Gasolina</h3>
+
+<script>
+    var tamanhoDoTanque = 40
+    var caminhoComGasolina = 480
+    var consumoDeGasolina = caminhoComGasolina/tamanhoDoTanque
+
+    document.write("Meu carro consumiu " + Math.round(consumoDeGasolina) + " Km/L com gasolina. <br>" );
+</script>
+
+<script>
+    var caminhoComAlcool = 300
+    var consumoDeAlcool = caminhoComAlcool/tamanhoDoTanque
+
+    document.write("Meu carro consumiu " + Math.round(consumoDeAlcool) + " Km/L com álcool. <br>");
+</script>
+
+<script>
+    var precoDaGasolina = 2.90
+    var precoDoAlcool = 2.40
+    
+    //Na conta abaixo, a operação de divisão precisa ser incluída entre parênteses para que o valor final receba o tratamento "toFixed".
+    document.write("Preço por Km: " + (precoDaGasolina/consumoDeGasolina).toFixed(2) + "<br>");
+    
+    document.write("Preço por Km: " + precoDoAlcool/consumoDeAlcool + "<br>");
+</script>
