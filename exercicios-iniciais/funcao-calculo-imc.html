@@ -1,5 +1,17 @@
-//Código incompleto//
+<meta charset="UTF-8">
 
 <script>
-    var calculaIMC = function ()
+    //Capítulo 3//
+
+    var mostra = function (frase){
+        document.write(frase);
+    };
+    var calculaIMC = function (altura,peso){
+        var imc = peso / (altura*altura);
+        mostra("O IMC calculado é: " + imc);
+    };
+
+    var pesoDoPrimo = 83;
+    var alturaDoPrimo = 1.76;
+    calculaIMC(alturaDoPrimo,pesoDoPrimo);
 </script>
