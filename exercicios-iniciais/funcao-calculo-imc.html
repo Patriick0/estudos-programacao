@@ -2,16 +2,108 @@
 
 <script>
     //Capítulo 3//
+    //Cálculo do IMC V1//
 
     var mostra = function (frase){
         document.write(frase);
     };
+    var pulaLinha = function(){
+        document.write("<br><br>");
+    };
     var calculaIMC = function (altura,peso){
         var imc = peso / (altura*altura);
+        mostra ("V1");
+        pulaLinha ();
         mostra("O IMC calculado é: " + imc);
     };
 
     var pesoDoPrimo = 83;
     var alturaDoPrimo = 1.76;
     calculaIMC(alturaDoPrimo,pesoDoPrimo);
+</script>
+
+<script>
+    //Cálculo do IMC V2//
+    var mostra = function (frase){
+        document.write(frase);
+    };
+    var pulaLinha = function(){
+        document.write("<br><br>");
+    };
+    var pulaLinhaEstilizada = function(){
+        document.write("<hr>");
+    };
+    var calculaIMC = function (altura,peso){
+        var imc = peso / (altura*altura);
+        return imc;
+    };
+
+    var pesoDoPrimo = 83;
+    var alturaDoPrimo = 1.76;
+    var imcDoPrimo = calculaIMC(alturaDoPrimo, pesoDoPrimo);
+
+    pulaLinhaEstilizada ();
+    mostra ("V2");
+    pulaLinha ();
+    mostra ("O IMC do meu primo é: " + imcDoPrimo);
+    pulaLinha ();
+    mostra ("Ele ainda está " + (imcDoPrimo - 18.5) + " pontos acima do limite de da magreza.");
+    pulaLinhaEstilizada ();
+</script>
+
+<script>
+    // Cálculo do IMC V3//
+
+    var mostra = function(frase){
+        document.write(frase);
+    };
+    var pulaLinha = function(){
+        document.write("<br>");
+    };
+    var pulaLinhaEstilizada = function (){
+        document.write("<hr>");
+    };
+    var calculaIMC = function (altura,peso){
+        var imc = peso / (altura*altura);
+            return imc;
+    };
+    var meuPeso = 45;
+    var minhaAltura = 1.65;
+    var meuIMC = calculaIMC (minhaAltura,meuPeso);
+
+    mostra ("V3");
+    pulaLinha();
+    pulaLinha();
+    mostra ("O meu IMC é " + (meuIMC).toFixed(2) + " e eu estou " + (meuIMC - 35).toFixed(2) + " pontos de distância da obesidade severa");
+    pulaLinhaEstilizada();
+</script>
+
+<script>
+    // Cálculo do IMC V4//
+
+    var mostra = function(frase){
+        document.write(frase);
+    };
+    var pulaLinha = function(){
+        document.write("<br>");
+    };
+    var pulaLinhaEstilizada = function (){
+        document.write("<hr>");
+    };
+    var calculaIMC = function (altura,peso){
+        var imc = peso / (altura*altura);
+            return imc;
+    };
+    var meuPeso = 45;
+    var minhaAltura = 1.65;
+    var meuIMC = Math.round(calculaIMC(minhaAltura,meuPeso));
+
+    mostra ("V4");
+    pulaLinha();
+    pulaLinha();
+    mostra ("Arredondamento na declaração da variável.");
+    pulaLinha();
+    pulaLinha();
+    mostra ("O meu IMC é " + meuIMC + " e eu estou " + (meuIMC - 35) + " pontos de distância da obesidade severa");
+
 </script>
