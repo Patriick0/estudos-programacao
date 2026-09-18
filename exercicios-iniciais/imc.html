@@ -1,10 +1,13 @@
+<meta charset="UTF-8">
+
 <script>
-    var peso = 45;
-    var altura = 1.65;
+    var nome = prompt("Qual é o seu nome?");
+    var peso = prompt(nome + " qual é o seu peso?");
+    var altura = prompt (nome + " qual é a sua altura?");
     var imc = peso / (altura*altura);
     var mostra = function (frase){
         document.write(frase);
     };
 
-    mostra("Meu IMC é: " + imc);
+    mostra(nome + ", o seu IMC é: " + imc);
 </script>
